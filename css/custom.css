@@ -223,7 +223,7 @@ body {
 }
 
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: 'open sans', sans-serif;
 	overflow-x:hidden;
 }
 
@@ -244,30 +244,31 @@ p {
 	line-height:28px;
 }
 
+
+
 h2 {
 	margin:0 0 20px;
-	color:#242429;
-	font-family:'emilys candy', cursive;
+	font-family: 'Knewave', cursive;
+	color: #CCCC04;
+	text-transform: uppercase;
 	font-size:56px;
 }
 
-#jumbotron-text {
-	color: #CCCC04;
-}
-
 h3 {
-	color:black;
-	font-family:'Alegreya Sans SC';
+	color: black;
+	font-family:'open sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
 }
 
 h4 {
 	color:black;
-	font-family:'Alegreya Sans SC';
+	font-family:'source code pro', monospace;
 	margin-top:0;
 }
 
 .content-first {
-	background-image: url("/image/squig7.jpg");
+	background-color: rgb(245, 250, 244);
 	padding:80px 0;
 	color:black;
 	border-top:8px solid rgba(0,0,0,0.1);
@@ -275,7 +276,7 @@ h4 {
 }
 
 .content-second {
-	background-image: url("/image/big-squig.jpg");
+	background-color: rgb(255, 255, 255);
 	padding:80px 0;
 	color:black;
 	border-top:8px solid rgba(0,0,0,0.1);
@@ -325,14 +326,15 @@ h4 {
 .btn,
 .btn:hover,
 .btn:focus {
-	font-family:'Montserrat';
+	font-family:'source code pro', monospace;
+	font-style: italic;
 	border-bottom:4px solid #FFFFFF;
-	color:#FFFFFF;
+	color:#FCE5CD;
 	transition-duration:0.4s;
 }
 
 .btn-primary {
-	background-color:#000000;
+	background-color:white;
 	border-color:#2fc91a;
 }
 
@@ -362,9 +364,10 @@ h4 {
 
 .btn-reference:hover,
 .btn-reference.btn-active {
-	border:1px solid #16A085;
-	border-bottom:3px solid #16A085;
-	color:#16A085;
+	border:1px solid #B45F06;
+	border-bottom:3px solid #B45F06;
+	color:#B45F06;
+	background-color: #FCE5CD;
 }
 
 /*------------------------------
@@ -390,7 +393,7 @@ h4 {
 
 .navbar-default {
 	margin:0;
-	background-color:silver;
+	background-color:#FFF2CC;
 	border:none;
 	border-radius:0;
 	height:78px;
@@ -400,9 +403,9 @@ h4 {
 }
 
 .navbar-default .navbar-brand {
-	font-family:'Montserrat';
+	font-family:'knewave', cursive;
 	padding:23px 0 0 25px;
-	color:#16A085;
+	color:#00CF00;
 	font-size:24px;
 	transition-duration:0.7s;
 }
@@ -417,10 +420,11 @@ h4 {
 }
 
 .navbar-default .navbar-nav > li > a {
-	color:#FFFFFF;
-	font-family:'Alegreya Sans SC';
+	color:black;
+	font-family:'open sans', sans-serif;
+	text-transform: uppercase;
 	margin-top:6px;
-	font-size:18px;
+	font-size:14px;
 	border-left:4px solid transparent;
 	transition-duration:0.7s;
 }
@@ -441,7 +445,7 @@ h4 {
 
 .navbar-collapse {
 	margin:0;
-	background-color:silver;
+	background-color:#FFF2CC;
 	border:none;
 	border-radius:0;
 	padding-top:3px;
@@ -484,7 +488,7 @@ header {
 .brands > li > a {
 	background-color:transparent;
 	color:black;
-	border-top:3px solid #16A085;
+	border-top:3px solid black;
 	transition-duration:0.2s;
 }
 
@@ -533,33 +537,6 @@ header {
 	color:#34495E;
 }
 
-/* TWITTER FEED */
-
-.tweets {
-	margin-top:35px;
-	background-color:#16A085;
-	border-radius:6px;
-	padding:7px 0;
-	color:#FFFFFF;
-	height:135px;
-}
-
-.tweets p {
-	padding:8px 15px 0 0px;
-	font-family:'Montserrat';
-	font-size:16px;
-}
-
-.tweets .media-body {
-	padding-left:0;
-}
-
-.tweets i {
-	font-size:68px;
-	color:#34495E;
-	padding-left:15px;
-}
-
 /* IMAGE OVERLAY */
 
 .overlay-wrapper {
@@ -596,12 +573,6 @@ header {
 
 /* SKILLS */
 
-#skills {
-	display:block;
-	background-color: pink;
-	padding:30px 0;
-}
-
 #skills-toggle {
 	border-radius:5px 5px 0 0;
 }
@@ -627,7 +598,7 @@ header {
 }
 
 .timeline {
-    border-left:3px solid rgb(245, 33, 104);
+    border-left:3px solid #00CF00;
     margin-left:110px;
     padding-left:0px;
 }
@@ -654,15 +625,15 @@ header {
 	text-align:center;
 	font-size:14px;
 	border-radius:50%;
-	background-color:#83bc1a;
-	border:6px solid #34495E;
+	background-color:white;
+	border:6px solid black;
 	display: inline-block;
 	padding-top:2px;
 }
 
 .event .event-info .date {
 	font-size:12px;
-	font-family:'Montserrat';
+	font-family:'open sans', sans-serif;
 	margin-left:25px;
 }
 
@@ -675,8 +646,6 @@ header {
 /*------------------------------
 	PRIORITIES
 ------------------------------*/
-
-
 
 .service > h3 {
 	transition-duration:0.5s;
@@ -813,7 +782,7 @@ blockquote footer {
 }
 
 /*------------------------------
-	REFERENCE
+	PORTFOLIO (me)
 ------------------------------*/
 .grid {
 	padding: 20px;
@@ -824,9 +793,9 @@ blockquote footer {
 }
 
 .grid li {
-	display: inline-block;
-	width: 350px;
-	margin: 0;
+	display: block;
+	width: 400px;
+	margin: auto;
 	padding: 20px;
 	text-align: left;
 	position: relative;
@@ -848,8 +817,8 @@ blockquote footer {
 	top: 0;
 	left: 0;
 	padding: 15px;
-	background: #2c3f52;
-	color: #ed4e6e;
+	background: black;
+	color: white;
 }
 
 .grid figcaption h3 {
@@ -938,7 +907,7 @@ blockquote footer {
 	position: absolute;
 	bottom: 15px;
 	
-	background-color:#ED5A64;
+	background-color:#ff0011;
 }
 
 .cs-style-4 figcaption a:hover {
@@ -1114,7 +1083,7 @@ blockquote footer {
 ------------------------------*/
 
 #testimonials {
-	background-image: url("/image/big-squig2");
+	background: white;
 }
 
 #testimonials .media {
