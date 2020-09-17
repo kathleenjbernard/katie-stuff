@@ -1,14 +1,28 @@
-/*------------------------------
-	SKILLS
-------------------------------*/
+/*------------------------------------*\
+    Section - skills
+\*------------------------------------*/
 
-#progress-bar-text {
-	margin: 0 1rem 0 1rem;
-	text-align: left;
-}
+.services-item {
+	padding: 15px 0;
+	margin: 1rem;
+	background-color: white;
+  }
 
-#skills-section {
-}
+  .services-item.advanced {
+	  background-color: rgb(142, 241, 142);
+  }
+  .services-item.intermediate {
+	  background-color: rgb(134, 214, 134);
+  }
+
+  .services-item.basic {
+	background-color: rgb(199, 241, 199);
+  }
+
+  .inner-content>.skill-descriptor {
+	  display: block;
+  }
+  
 
 /*------------------------------
 	BLOG
@@ -180,7 +194,7 @@ h3 {
 }
 
 h4 {
-	color:black;
+	color:#B45F06;
 	font-family:'source code pro', monospace;
 	margin-top:0;
 }
@@ -200,6 +214,29 @@ h4 {
 	border-top:8px solid rgba(0,0,0,0.1);
 	box-shadow:0px 1px 0px rgba(255,255,255,0.2);
 	text-align:center;
+}
+
+#services-web {
+	background-color: #FFF2CC;
+	padding-bottom: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+#development-details {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+
+}
+
+ul { /**remove auto indent**/
+	margin: 0;
+	padding: 0;
+}
+
+#development-details li {
+	display: block;
+	list-style: none;
 }
 
 .scrollpoint {
@@ -327,7 +364,7 @@ h4 {
 .navbar-default .navbar-brand {
 	font-family:'knewave', cursive;
 	padding:23px 0 0 25px;
-	color:black;
+	color:#CCCC04;
 	font-size:35px;
 	transition-duration:0.7s;
 }
@@ -339,7 +376,7 @@ h4 {
 }
 
 .navbar-default .navbar-brand:hover {
-	color:#FFFFFF;
+	color:#00CF00;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -353,16 +390,15 @@ h4 {
 }
 
 .navbar-default .navbar-nav > li > a.blog_menu_link{
-	color:#00CF00;
+	color:#B45F06;
 }
 
 .navbar-default .navbar-nav > li > a.blog_menu_link:hover{
-	color:#00CF00;
-	border-left:4px solid #00CF00;
+	color:#B45F06;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-	color:#00CF00;
+	color:#B45F06;
 	font-weight: bold;
 }
 
@@ -551,7 +587,7 @@ header {
 }
 
 .service:hover > h3 {
-	color:#00CF00;
+	color:#B45F06;
 	font-size: 150%;
 }
 
@@ -1278,6 +1314,8 @@ blockquote footer {
 @media (max-width:767px) {
 	.navbar-collapse {
 		box-shadow:none;
+		border-top: 5px;
+		border-bottom: 5px;
 	}
 	
 	.navbar-default {	
@@ -1292,8 +1330,7 @@ blockquote footer {
 	
 	.navbar-default .navbar-toggle {
 		margin:0;
-		background-color:#16A085;
-		border:0;
+		background-color:#B45F06;
 		border-radius:0;
 		padding:3px 0 0;
 		height:50px;
@@ -1304,7 +1341,7 @@ blockquote footer {
 	
 	.navbar-default .navbar-toggle:hover, 
 	.navbar-default .navbar-toggle:focus {
-		background-color: #16A085;
+		background-color: #CCCC04;
 	}
 	
 	.navbar-brand{
