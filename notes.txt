@@ -1,2 +1,26 @@
 Make portfolio show all screen sizes
 cutsey retro computer instead of overplayed mac vectors
+buy domain 
+add in social media 
+twitter feed?
+decide what to do with timeline 
+change approach to services?
+
+
+
+9/16 changes 
+added links to portfolio
+changed "show me" to "view"
+
+
+
+To do before deploy:
+
+update illustration with newer version
+update codepen visibilities
+create hover field over skills squares? to view certificate?
+redesign portfolio section for mobile devices
+
+
+
+put a polaroid of me in place of creditentials 

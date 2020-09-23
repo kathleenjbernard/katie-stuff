@@ -1,27 +1,43 @@
 /*------------------------------------*\
-    Section - skills
+    Section - technical skills
 \*------------------------------------*/
+
+#skills {
+
+}
 
 .services-item {
 	padding: 15px 0;
-	margin: 1rem;
 	background-color: white;
+	min-height: 100px;
+	border: 1px solid green;
+	margin: 15px;
   }
 
-  .services-item.advanced {
-	  background-color: rgb(142, 241, 142);
+  .row.xtra-padding {
+	  margin-left: 10vw;
   }
-  .services-item.intermediate {
-	  background-color: rgb(134, 214, 134);
-  }
-
-  .services-item.basic {
-	background-color: rgb(199, 241, 199);
-  }
+  
 
   .inner-content>.skill-descriptor {
 	  display: block;
   }
+
+  div h4 {
+	  color: black;
+	  font-weight: bold;
+	  padding: 0 0.5rem 0 0.5rem;
+  }
+
+  .w3cert {
+	width: 90px;
+	height: auto;
+}
+
+.cert-link {
+	text-align: center;
+	font-size: 90%;
+}
   
 
 /*------------------------------
@@ -190,8 +206,11 @@ h3 {
 	font-weight: 700;
 	font-size: 2rem;
 	letter-spacing: 2px;
-
 }
+
+.row h3  {
+	padding-top: 1rem;
+} 
 
 h4 {
 	color:#B45F06;
@@ -531,55 +550,17 @@ header {
 	color:#1ABC9C;
 }
 
-/* SKILLS */
+/* Polaroid */
 
-.timeline {
-    margin-left:110px;
-    padding-left:0px;
+#polaroid {
+	padding: 1rem;
+	width: 250px;
+	height: auto;
 }
 
-.event {
-	padding:20px 10px 20px 18px;
-	margin-bottom:10px;
-}
-
-.event .event-info {
-	position:absolute;
-	left:50px;
-	width:100px;
-}
-
-.event .event-info:after {
-	font-family: FontAwesome;
-    width:36px;
-	height:36px;
-    position: absolute;
-    right: 5px;
-    top: -7px;
-	
-	text-align:center;
-	font-size:14px;
-	border-radius:50%;
-	background-color:white;
-	border:6px solid black;
-	display: inline-block;
-	padding-top:2px;
-}
-
-.event .event-info .date {
-	font-size:12px;
-	font-family:'open sans', sans-serif;
-	margin-left:25px;
-}
-
-.event .event-info .date div {
-	float:left;
-	padding:8px 0 0 12px;
-	font-weight:600;
-}
 
 /*------------------------------
-	'My Focus'
+	SERVICES
 ------------------------------*/
 
 .service > h3 {
@@ -653,11 +634,10 @@ blockquote footer {
 	text-align: center;
 }
 
-.grid li { /**bookmark**/
-	display: block;
-	max-width: 1000px;
-	width: auto;
-	margin: auto;
+.grid li {
+	display: inline-block;
+	width: 350px;
+	margin: 0;
 	padding: 20px;
 	text-align: left;
 	position: relative;
@@ -679,9 +659,8 @@ blockquote footer {
 	top: 0;
 	left: 0;
 	padding: 15px;
-	background: #CCCC04;
-	filter: opacity(60%);
-	color: white;
+	background-image: linear-gradient(to right, #91D000, #CCCC04);
+	color: #ed4e6e;
 }
 
 .grid figcaption h3 {
@@ -690,15 +669,13 @@ blockquote footer {
 	color: #fff;
 }
 
-.grid figcaption span:before {
-	content: 'by ';
-}
+
 
 .grid figcaption a {
 	text-align: center;
 	padding: 5px 10px;
 	border-radius: 2px;
-	display: inline-block;
+	display: block;
 	background: #ed4e6e;
 	color: #fff;
 }
@@ -767,11 +744,20 @@ blockquote footer {
 }
 
 .cs-style-4 figcaption a {
+	margin: 2rem 0 1rem 0;
+}
+
+.learn-link figcaption a {
 	position: absolute;
 	bottom: 15px;
-	
-	background-color:#ff0011;
 }
+
+.visit-link figcaption a {
+	position: absolute;
+	bottom: 30px;
+}
+
+
 
 .cs-style-4 figcaption a:hover {
 	color:#ED5A64;
@@ -1095,26 +1081,25 @@ blockquote footer {
 ------------------------------*/
 
 #footer {
-	background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1596056187/coming-soon_oizbsf.png");
-	background-size: 10rem;
+	background: #FFF2CC;
+	background-size: auto;
 	text-align:center;
 	padding:40px 0;
-	color:#FFFFFF;
+	color:black;
 	border-top:8px inset #333;
 	border-top:8px solid rgba(0,0,0,0.1);
 	box-shadow:0px 1px 0px rgba(255,255,255,0.2);
 }
 
 #footer .brands li a {
-	color:#16A085;
+	color: black;
 	
 	border-radius:50px;
 	border:0;
 }
 
 #footer .brands li a:hover {
-	color:#FFFFFF;
-	background-color:#283848;
+	color: #B45F06;
 }
 
 #footer p {
@@ -1567,6 +1552,12 @@ blockquote footer {
 ------------------------------*/
 
 @media (max-width:480px) {
+	
+	.row.xtra-padding {
+		margin-left: 0px;
+	}
+	
+	
 	.timeline {
 		margin:25px 0 0 210px;
 	}
