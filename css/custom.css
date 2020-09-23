@@ -2,20 +2,22 @@
     Section - technical skills
 \*------------------------------------*/
 
-#skills {
+#skills, #about {
+	background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1600894568/squig8_dinyl5.jpg");
+	background-size: cover;
+}
 
+#other-work {
+	background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1600894568/squig8_dinyl5.jpg");
+	background-size: contain;
 }
 
 .services-item {
 	padding: 15px 0;
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.685);
 	min-height: 100px;
-	border: 1px solid green;
+	outline: 8px solid rgba(0,0,0,0.1);
 	margin: 15px;
-  }
-
-  .row.xtra-padding {
-	  margin-left: 10vw;
   }
   
 
@@ -29,137 +31,19 @@
 	  padding: 0 0.5rem 0 0.5rem;
   }
 
-  .w3cert {
+  .w3cert-img {
 	width: 90px;
 	height: auto;
 }
+
+  .w3cert-img:hover {
+	  filter: brightness(150%);
+  }
 
 .cert-link {
 	text-align: center;
 	font-size: 90%;
 }
-  
-
-/*------------------------------
-	BLOG
-------------------------------*/
-#date  {
-	width:100px;
-	position:absolute;
-	top:114px;
-	padding-left:17px;
-	padding-top:17px;
-	background-color:#ffffff;
-	color:#2F4254;
-	border-top-right-radius:15px;
-	border-bottom-right-radius:15px;
-}
-
-#date p{
-	font-weight:600;
-	font-size:40px;
-	font-family: 'Montserrat';
-}
-
-#date .month{
-	font-weight:500;
-	font-size:30px;
-	font-family: 'Montserrat';
-}
-
-#blog-header {
-	padding-top:10px;
-	height:80px;
-	background-color:#2F4254;
-}
-
-#blog-header i {
-	font-size:40px;
-	position:relative;
-	top:5px;
-}
-
-.arrow-left {
-	margin-right:15px;
-}
-
-.arrow-right {
-	margin-left:15px;
-}
-
-.blog-header-menu-right {
-	text-align:right;
-}
-
-#blog-header a{
-	color:#16A085;
-	font-size:20px;
-}
-
-#blog-header a:hover{
-	color:#1ABC9C; 
-}
-
-#blog-post {
-	background-color:#34495E;
-}
-
-.blog-content {
-	padding-top:25px;
-}
-
-.blog-content img {
-	margin-right:15px;
-}
-
-.blog-content p {
-	padding-right:20px;
-	color:#FFFFFF;
-}
-
-.blog-sidebar {
-	padding-top:25px;
-	color:#FFFFFF;
-}
-
-.blog-sidebar img {
-	max-width:150px;
-	margin:auto auto;
-}
-
-.blog-about h3 {
-	color:#16A085;
-}
-
-.archive span{
-	background-color:#ED5A64;
-	padding:2px 6px;
-	border-radius:25px;
-	margin-left:10px;
-}
-
-.blog-sidebar li{
-	text-align:left;
-	margin-top:15px;
-}
-
-.blog-sidebar .archive ul {
-	list-style:none;
-}
-
-.blog-about-xs {
-	margin-bottom:25px;
-	color:#FFFFFF;
-}
-
-.blog-about-xsimg {
-	max-width:200px;
-}
-
-.blog-about-xs h3 {
-	color:#16A085;
-}
-
 
 /*------------------------------
 	MAIN
@@ -258,6 +142,10 @@ ul { /**remove auto indent**/
 	list-style: none;
 }
 
+div.other-services {
+	height: 150px;
+}
+
 .scrollpoint {
 	opacity:0;
 }
@@ -308,13 +196,26 @@ ul { /**remove auto indent**/
 }
 
 .btn-primary {
-	background-color: transparent;
-	border-color: transparent;
-	font-size: 5rem;
-	color: #00CF00 ;
+	background-color: #CCCC04;
+	font-size: 3rem;
+	border: none;
+	color: black ;
 	font-family: 'knewave', cursive;
 	font-style: normal;
+	text-transform: uppercase;
 }
+
+.btn-primary:hover,
+.btn-primary:focus {
+	background-color:  #00CF00;
+	color: black;
+	font-family: 'knewave', cursive;
+	text-transform: uppercase;
+	font-style: normal;
+	border: none;
+}
+
+
 
 .btn-footer {
 	background-color:#FFFFFF;
@@ -324,14 +225,6 @@ ul { /**remove auto indent**/
 
 .btn-footer:hover {
 	background-color:#2C3E50;
-}
-
-
-.btn-primary:hover,
-.btn-primary:focus {
-	background-color:#DB4F58;
-	color:#ffffff;
-	border-color:#DB4F58;
 }
 
 .btn-reference {
@@ -1002,7 +895,7 @@ blockquote footer {
 }
 
 #contact .macbook-inner.black {
-	background-color:#222222;
+	background-color: none;
 }
 
 #contact h3 {
@@ -1034,28 +927,16 @@ blockquote footer {
 	resize:none;
 }
 
-#contact .contact-info {
+.contact-info {
 	background-color:#FFF2CC;
 	border-radius:5px;
 	color:black;
-	padding:0 12px;
-	text-align:left;
+	padding:12px;
+	text-align:center;
 }
 
-#contact .contact-info p {
-	border-bottom:2px dashed black;
-	margin:0;
-	padding:12px 0;
+h3.contact-info {
 	text-align: center;
-}
-
-#contact .contact-info p:last-child {
-	border-bottom:0;
-}
-
-.contact-image {
-	width:164px;
-	padding-bottom:15px;
 }
 
 #contact .controls {
@@ -1113,6 +994,10 @@ blockquote footer {
 	.date-small {
 		display:none;
 	}
+
+	.row.xtra-padding {
+		margin-left: 10vw;
+	}
 }
 
 @media (min-width:1280px) and (max-width:1380px) {
@@ -1138,6 +1023,10 @@ blockquote footer {
 	.date-small {
 		display:none;
 	}
+
+	.row.xtra-padding {
+		margin-left: 10vw;
+	}
 }
 
 @media (min-width:1200px) and (max-width:1279px) {
@@ -1146,6 +1035,10 @@ blockquote footer {
 	}
 	.date-big {
 		display:none;
+	}
+
+	.row.xtra-padding {
+		margin-left: 10vw;
 	}
 	
 }
@@ -1157,6 +1050,10 @@ blockquote footer {
 	.date-big {
 		display:block;
 	}
+
+	.row.xtra-padding {
+		margin-left: 10vw;
+	}
 	
 }
 
@@ -1166,6 +1063,10 @@ blockquote footer {
 	}
 	.date-big {
 		display:none;
+	}
+
+	.row.xtra-padding {
+		margin-left: 10vw;
 	}
 	
 }
@@ -1177,17 +1078,12 @@ blockquote footer {
 	.date-big {
 		display:block;
 	}
+
+	.row.xtra-padding {
+		margin-left: 10vw;
+	}
 }
 	
-@media (min-width:1px) and (max-width:939px) {
-	.date-small {
-		display:block;
-	}
-	.date-big {
-		display:none;
-	}
-	
-}
 
 
 /*------------------------------
@@ -1221,6 +1117,10 @@ blockquote footer {
 	.contact-image {
 		width:74px;
 	}
+	.row.xtra-padding {
+		margin-left: 10vw;
+	}
+	
 		
 }
 
@@ -1289,6 +1189,10 @@ blockquote footer {
 	.tweets p {
 		line-height:20px;
 		font-size: 14px;
+	}
+
+	.row.xtra-padding {
+		margin-left: 8vw;
 	}
 }
 
