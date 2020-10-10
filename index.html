@@ -69,7 +69,7 @@
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavigation"><i class="fa fa-bars"></i></button>
-                    <img src="image/me-abstract-head.png" class="navbar-logo pull-left" alt="" />
+                    
                     <a href="index.html" class="navbar-brand animated flipInX">KB</a>
                 </div>
                 
@@ -100,7 +100,7 @@
                     <li><a href="https://www.linkedin.com/in/katie-bernard-45ab08187/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                 </ul>
                 <div>
-                    <h3>Web developer</h3>
+                    <h3 style="color: black;">Web Developer + Designer</h3>
                 </div>       
             </div>
             <!-- Slideshow start                          
@@ -124,8 +124,54 @@
     =========================== -->   
     <section id="intro" class="content-second">
         <div class="inner-intro">
-            <h3 class="extra-padding header">Need a website?</h3>
-            <p class="new-p"> I'll create a website for you that's completely unique and tailored to your vision and business goals - for <span style="font-weight: bold;">half the cost</span> of what you might pay a development company. Choosing me gets you an incredible website at a great value and allows me to build my portfolio! <btn class="btn btn-primary" id="get-started-button">get started</btn></p>
+            <h2>Need a website?</h2><br> 
+                <h3 style="background-color: #e3ed5a; max-width: 600px; display: block; margin-left: auto; margin-right: auto; padding: 10px 0 10px 0; margin-bottom: 30px;">Get yourself someone that can do all three.</h3>
+            <div class="container" id="service-outer-container">
+                <div class="row justify-center">
+                    
+                    <div class="col-md-3  service scrollpoint sp-effect1 service-wrapper" class="development">
+                    <img src="image/ico5.png" alt="">
+                    <h3 class="service-heading">Web Development</h3>
+                    <p>From concept to deployment, I handle it all.</p>
+                    <ul class="service-list">
+                        <li class="service-list-item"><i class="icon fas fa-check"></i>My code is compliant with industry standards</li>
+                        <li class="service-list-item"><i class="icon fas fa-check"></i>Fully mobile responsive</li>
+                        <li class="service-list-item"><i class="icon fas fa-check"></i>Search-Engine Optimization included</li>
+                        <li class="service-list-item"><i class="icon fas fa-check"></i>Domain name registration and hosting</li>
+                        <li class="service-list-item"><i class="icon fas fa-check"></i>Troubleshooting, debugging, and quality control</li>
+                        <li class="service-list-item"><i class="icon fas fa-check"></i>Optional monthly maintenance</li>
+                    </ul>
+                    </div>
+                    
+                    
+                    <div class="col-md-3  service scrollpoint sp-effect1 service-wrapper" id="design">
+                    <img src="image/ico4.png" alt="">
+                    <h3 class="service-heading">Web Design</h3>
+                    <p>I value uniqueness, brand authenticity, and creativity. Why make another website that looks like all the rest?</p>
+                    <ul class="service-list">
+                        <li class="service-list-item"><i class="icon fas fa-check"></i>Optimized for all mobile devices</li>
+                        <li class="service-list-item"><i class="icon fas fa-check"></i>Unique to your brand and vision</li>
+                        <li class="service-list-item"><i class="icon fas fa-check"></i>Fully customized - the sky's the limit</li>
+                    </ul>
+                    </div>
+                    
+                    
+                    <div class="col-md-3 service scrollpoint sp-effect2 service-wrapper" id="illustration">
+                    <img src="image/ico1.png" alt="">
+                    <h3 class="service-heading">Logos + Digital Illustration</h3>
+                    <p>Wanting to rebrand or modify existing branding materials? No problem.</p>
+                    <ul class="service-list">
+                        <li class="service-list-item"><i class="icon fas fa-check"></i>Vector illustration</li>
+                        <li class="service-list-item"><i class="icon fas fa-check"></i>Branding and logos</li>
+                        <li class="service-list-item"><i class="icon fas fa-check"></i>Custom user interface graphics</li>
+                        <li class="service-list-item"><i class="icon fas fa-check"></i>General design tweaks</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="new-p-wrapper">
+                <p class="new-p"> Best of all, you'll pay<span style="font-weight: bold;"> less than half the cost</span> of what you would pay hiring a developer, web designer, and graphic designer seperately.  <a href=#contact><btn class="btn btn-reference" id="get-started-button">Get started</btn></a></p>
+            </div>
         </div>
     </section>
     <!-- ==========================
@@ -193,12 +239,13 @@
     	DESIGN WORK - START
     =========================== -->
     <section id="skills" class="content-second">
+        <div class="skills-container-wrapper">
         
-        <div class="container" id="skills-icon-container">
-            <div class="row">
+            <div class="container" id="skills-icon-container">
+                <div class="row">
 
-                <div class="col-sm-12 scrollpoint sp-effect1 icon-container text-center"> <!--   #4C4B4B  -->
-                    <div class="icon-box cert img-rounded">
+                    <div class="col-sm-12 scrollpoint sp-effect1 icon-container text-center"> <!--   #4C4B4B  -->
+                     <div class="icon-box cert img-rounded">
                         <i class="skill-icon icon fab fa-html5"></i>
                         <h5>HTML</h5>
                         <h6>certified</h6>
@@ -227,7 +274,7 @@
                     </div>
 
                     <div class="icon-box img-rounded">
-                        <img src="image/icon-adobe-illustrator.png" height="40">
+                        <img src="image/icon-adobe-illustrator.png" height="40" class="illustrator">
                         <h5>Adobe Illustrator</h5>
                     </div>
 
@@ -246,18 +293,9 @@
                         <h5>React.js</h5>
                     </div>
 
-                    <div class="icon-box img-rounded">
-                        <i class="skill-icon icon fab fa-sass"></i>
-                        <h5>Sass</h5>
-                    </div>
-
-               </div><!-- Profile description end--> 
-
-                
-              
-               
-            </div><!--Row about end-->
-        </div><!-- Container end-->
+                </div><!--Row about end-->
+            </div><!-- Container end-->
+        </div> <!--Wrapper end-->
     
 	</section>
     <!-- ==========================
@@ -268,15 +306,21 @@
     	CONTACT - START
     =========================== -->   
     <section id="contact" class="content-first">
-        <h2 class="scrollpoint sp-effect3 text-center">Contact</h2>
-        <div class="container text-center" id="contact-p">
-            <p>To get started, please send me a brief email about your goals and any initial questions or comments you have for me. I look forward to taking on your project!</p>
-        </div>
-                <div class="container text-center">
-            <div class="row contact-info" style="line-height: 1.8;">
-                <h3 class="contact-name">Katie Bernard</h3>
-                <div class="contact-method" style="font-size: 12pt;">kathleenjbernard@gmail.com</div>
-                <div class="contact-method" style="font-size: 12pt;">302-632-6861</div>
+        <div class="contact-wrapper">
+            <h2 class="scrollpoint sp-effect3 text-center">Contact</h2>
+            <div class="container text-center" id="contact-p">
+                <p>To get started, please send me a brief email about your goals and any initial questions or comments you have for me. I look forward to taking on your project!</p>
+            </div>
+            <div class="container text-center">
+                <div class="row contact-info" style="line-height: 1.8;">
+
+                    <h3 class="contact-name">Katie Bernard</h3>
+
+                    <div class="contact-method" style="font-size: 12pt;">kathleenjbernard@gmail.com</div>
+
+                    <div class="contact-method" style="font-size: 12pt;">302-632-6861</div>
+              </div>   
+
             </div>
         </div> 
     </section>
@@ -299,7 +343,7 @@
                             <li><a href="https://www.linkedin.com/in/katie-bernard-45ab08187/"><i class="fa fa-linkedin"></i></a></li>
                         </ul>  
                     
-                    <p>©2020 All right reserved. </p>
+                    <p>©2020 Katie Bernard. All right reserved. </p>
                 </div>   	
             </div>
         </div>

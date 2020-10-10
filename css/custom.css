@@ -1,14 +1,66 @@
 /*------------------------------------*\
-    Section - technical skills
+    Section - skills
 \*------------------------------------*/
 
-#about {
-	background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1600894568/squig8_dinyl5.jpg");
-	background-size: cover;
+#skills {
+
+	
 }
 
-#skills {
-	background-color: whitesmoke;
+.skills-container-wrapper {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 650px;
+}
+
+h6 {
+	font-weight: bold;
+	color: black;
+	text-transform: uppercase;
+	background-color: #e3ed5a;
+}
+
+.icon.skill-icon {
+	font-size: 35pt;
+}
+
+.icon.skill-icon:hover {
+	filter: opacity(50%);
+}
+
+.illustrator:hover {
+	filter: opacity(50%);
+}
+
+.icon-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-image: linear-gradient(to bottom, #f5ffeb, #FFF2CC);
+	border: 10px solid rgba(128, 128, 128, 0.151);
+	padding: 30px 0 30px 0;
+	margin: 100px 0 150px 0;
+	color: black;
+	max-width: 650px;
+}
+
+.icon-box {
+	border: 2px solid transparent;
+	margin: 20px;
+	padding: 3px;
+	min-width: 80px;
+	max-width: 80px;
+	min-height: 80px;
+	max-height: 80px;
+}
+
+.icon-box.cert {
+}
+
+.icon-box h4 {
+	font-size: 95%;
+	color: black;
 }
 
   .inner-content>.skill-descriptor {
@@ -70,7 +122,7 @@ h2 {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	font-family: 'Knewave', cursive;
-	color: #e4e404b4;
+	color: black;
 	text-transform: uppercase;
 	font-size:80px;
 	letter-spacing: -2px;
@@ -85,87 +137,10 @@ h2 {
 	background-color: rgb(239, 255, 239);
 }
 
-.new-p {
-	font-family: 'open sans', sans-serif;
-	font-weight: lighter;
-	color: black;
-	background-color: whitesmoke;
-	margin: 0;
-	padding: 30px;
-	padding-bottom: 45px;
-	text-align: left;
-}
-
-#get-started-button {
-	margin: 0;
-	width: 150px;
-}
-
-h3 {
-	color: black;
-	font-family:'open sans', sans-serif;
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 2rem;
-	letter-spacing: 2px;
-}
-
-.extra-padding.header {
-	margin-top: 100px;
-	padding-bottom: 10px;
-	display: block;
-	text-align: left;
-	margin-left: 30px;
-	margin-right: auto;
-	font-size: 30px;
-}
-
-#intro {
-	background-color: #FFF2CC;
-	min-height: 45vh;
-}
-
-.row h3  {
-	padding-top: 1rem;
-} 
-
 h4 {
 	color:#B45F06;
 	font-family:'source code pro', monospace;
 	margin-top:0;
-}
-
-h6 {
-	font-weight: bold;
-	color: green;
-}
-
-.icon.skill-icon {
-	font-size: 35pt;
-}
-
-.icon-container {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-}
-
-.icon-box {
-	border: 2px solid transparent;
-	margin: 20px;
-	padding: 3px;
-	min-width: 80px;
-	max-width: 80px;
-	min-height: 80px;
-	max-height: 80px;
-}
-
-.icon-box.cert {
-}
-
-.icon-box h4 {
-	font-size: 95%;
-	color: black;
 }
 
 .content-first {
@@ -173,16 +148,14 @@ h6 {
 	padding-top: 40px;
 	padding-bottom: 40px;
 	color:black;
-	border-top:8px solid rgba(0,0,0,0.1);
-	box-shadow:0px 1px 0px rgba(255,255,255,0.2);
+
 }
 
 .content-second {
 	background-color: white;
 	padding:0 0;
 	color:black;
-	border-top:8px solid rgba(0,0,0,0.1);
-	box-shadow:0px 1px 0px rgba(255,255,255,0.2);
+
 	text-align:center;
 }
 
@@ -205,7 +178,7 @@ ul { /**remove auto indent**/
     position: fixed;
     bottom: 15px;
     right: 25px;
-    color: black;
+    color: white;
 	border:1px solid rgba(0,0,0,0.2);
     font-size: 16px;
     display: none;
@@ -215,13 +188,13 @@ ul { /**remove auto indent**/
 	padding-top:9px;
 	z-index:1000;
 	transition-duration:0.5s;
-	background-color: #e3ed5a;
+	background-color: black;
 	border-radius:50%;
 }
 
 .scroll-up:hover { 
-	background-color:#00CF00;
-	border-color:rgba(0,0,0,0.2);
+	background-color:#e3ed5a;
+	border-color:white;
 	padding-top:0px;
 	color: black;
 }
@@ -261,28 +234,19 @@ ul { /**remove auto indent**/
 	border: none;
 }
 
-.btn-footer {
-	background-color:#FFFFFF;
-	color:#2C3E50;
-	margin-left:5px;
-}
-
-.btn-footer:hover {
-	background-color:#2C3E50;
-}
-
 .btn-reference {
+	display: inline;
 	border:1px solid #FFFFFF;
 	border-bottom:3px solid #FFFFFF;
-	background-color:transparent;
+	background-color:#FFF2CC;
+	color: black;
+	margin: 20px;
 }
 
 .btn-reference:hover,
 .btn-reference.btn-active {
-	border:1px solid #B45F06;
-	border-bottom:3px solid #B45F06;
-	color:#B45F06;
-	background-color: #FCE5CD;
+	color:black;
+	background-color: #e3ed5a;
 }
 
 /*------------------------------
@@ -303,7 +267,7 @@ ul { /**remove auto indent**/
 .navbar-default .navbar-brand {
 	font-family:'knewave', cursive;
 	padding:23px 0 0 25px;
-	color:#e3ed5a;
+	color:black;
 	font-size:35px;
 	transition-duration:0.7s;
 }
@@ -315,7 +279,7 @@ ul { /**remove auto indent**/
 }
 
 .navbar-default .navbar-brand:hover {
-	color:#00CF00;
+	color:#e3ed5a;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -334,7 +298,7 @@ ul { /**remove auto indent**/
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-	background-color: #e3ed5a;
+	background-color: #ddeb1e;
 	font-weight: bold;
 }
 
@@ -362,17 +326,15 @@ header {
 
 .jumbotron { /*hero*/
 	margin:0;
-  	background-color:white;
+	  background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1600894568/squig8_dinyl5.jpg");
+	min-height: 100vh;
+	border-bottom: 10px solid #58565328
 }
 
 .jumbotron img {
 	margin:0 auto 0 auto;
 	max-width: 40vw;
 	margin-bottom:15px;
-}
-
-.image-wrapper {
-
 }
 
 .social-wrapper h2 {
@@ -393,12 +355,8 @@ header {
 }
 
 .brands > li > a:hover {
-	color:#CCCC04;
-	border-top:3px solid #CCCC04;
-}
-
-#slideshow .icon-first {
-	color:#ED5A64;
+	color: #B45F06;
+	border-top:3px solid #B45F06;
 }
 
 .jumbotron .btn {
@@ -417,16 +375,13 @@ header {
 	max-width:150px;
 }
 
-
 #about .brands > li > a {
 	background-color:transparent;
 	color:#FFFFFF;
 	transition-duration:0.4s;
 }
 
-#about .brands > li > a:hover {
-	color:#34495E;
-}
+
 
 /* IMAGE OVERLAY */
 
@@ -458,21 +413,108 @@ header {
 	margin-top:15px;
 }
 
-#about .overlay-wrapper .brands > li > a:hover {
-	color:#1ABC9C;
+/*------------------------------
+	SERVICES 
+------------------------------*/
+
+#service-outer-container {
+}
+
+.justify-center {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.service.service-wrapper {
+	border: 10px solid rgba(128, 128, 128, 0.151);
+	margin: 10px;
+	min-width: 200px;
+	background-image: linear-gradient(to bottom, #f5ffeb, #FFF2CC);
+}
+
+
+
+.service-list {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	list-style-type: none;
+	padding-bottom: 20px;
+	line-height: 1.5;
+	font-size: 95%;
+	max-width: 250px;
+	padding-left: 15px;
+}
+
+.service-list-item i {
+	padding-right: 5px;
+}
+
+.service-list-item {
+	text-align: left;
+}
+
+.service-wrapper>h3 {
+	color: black;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.new-p-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.new-p {
+	font-family: 'open sans', sans-serif;
+	font-weight: lighter;
+	color: black;
+	background-color: white;
+	margin: 0;
+	padding: 30px;
+	padding-bottom: 45px;
+	text-align: left;
+	max-width: 1000px;
+}
+
+#get-started-button {
+	margin: 0;
+	width: 150px;
+}
+
+h3 {
+	color: black;
+	font-family:'open sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 2rem;
+	letter-spacing: 2px;
+}
+
+.extra-padding.header {
+	margin-top: 100px;
+	padding-bottom: 10px;
+	margin-left: 30px;
+	margin-right: auto;
+	font-size: 30px;
+}
+
+#intro {
+	background-color: white;
+	min-height: 45vh;
 }
 
 /*------------------------------
 	PORTFOLIO (me)
 ------------------------------*/
 #portfolio {
-	background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1600894568/big-squig10_pzv0ad.jpg");
-	background-size: cover;
+
 }
 
 .grid {
 	padding: 20px;
-	max-width: 1300px;
+	max-width: 1000px;
 	margin: 0 auto;
 	list-style: none;
 	text-align: center;
@@ -504,7 +546,7 @@ header {
 	top: 0;
 	left: 0;
 	padding: 15px;
-	background-color: #e3ed5a;
+	background-color: #dae71fd2;
 	color: whitesmoke;
 }
 
@@ -518,7 +560,7 @@ header {
 	text-align: center;
 	padding: 5px 10px;
 	border: 1px solid white;
-	border-radius: 2px;
+	border-radius: 5px;
 	display: block;
 	background: whitesmoke;
 	color: black;
@@ -612,8 +654,16 @@ header {
 /*------------------------------
 	CONTACT
 ------------------------------*/
-#contact {
-	background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1600894568/squig8_dinyl5.jpg");
+.contact-wrapper {
+	background-image: linear-gradient(to bottom, #f5ffeb, #FFF2CC);
+	border: 10px solid rgba(128, 128, 128, 0.151);
+	background-size: cover;
+	background-attachment: fixed;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 650px;
+	padding: 30px 0 30px 0;
 }
 
 #contact h2 {
@@ -623,13 +673,15 @@ header {
 }
 
 .contact-info {
+	max-width: 600px;
 	padding-bottom: 25px;
 }
 
 #contact-p {
-	width: 50vw;
+	width: auto;
 	padding-top: 20px;
-	border-bottom: 5px solid black;
+	padding-bottom: 20px;
+
 }
 
 /*------------------------------
@@ -637,14 +689,12 @@ header {
 ------------------------------*/
 
 #footer {
-	background: #FFF2CC;
+	background: white;
 	background-size: auto;
 	text-align:center;
 	padding:40px 0;
 	color:black;
-	border-top:8px inset #333;
-	border-top:8px solid rgba(0,0,0,0.1);
-	box-shadow:0px 1px 0px rgba(255,255,255,0.2);
+
 }
 
 #footer .brands li a {
@@ -666,62 +716,23 @@ header {
  LARGE DEVICES
 ------------------------------*/
 @media (min-width:1380px) {
-	.date-small {
-		display:none;
-	}
-
+	
 	.row.xtra-padding {
 		margin-left: 10vw;
 	}
+	
 }
 
 @media (min-width:1280px) and (max-width:1380px) {
-	#date  {
-		width:60px;
-		padding-left:10px;
-		top:95px;
-	}
 	
-	#date p{
-		font-size:25px;
-		margin-bottom:10px;
-	}
-	
-	#date .month{
-		font-size:20px;
-	}
-	
-	#blog-post h2{
-		font-size:50px;
-	}
-	
-	.date-small {
-		display:none;
-	}
-
 	.row.xtra-padding {
 		margin-left: 10vw;
 	}
+	
 
-	#intro {
-		background-image: none;
-	}
-
-	.inner-intro {
-		margin-left: 20vw;
-		margin-right: 20vw;
-		margin-bottom: 50px;
-	}
 }
 
 @media (min-width:1200px) and (max-width:1279px) {
-	.date-small {
-		display:block;
-	}
-	.date-big {
-		display:none;
-	}
-
 	.row.xtra-padding {
 		margin-left: 10vw;
 	}
@@ -729,13 +740,6 @@ header {
 }
 
 @media (min-width:1161px) and (max-width:1199px) {
-	.date-small {
-		display:none;
-	}
-	.date-big {
-		display:block;
-	}
-
 	.row.xtra-padding {
 		margin-left: 10vw;
 	}
@@ -743,12 +747,6 @@ header {
 }
 
 @media (min-width:992px) and (max-width:1160px) {
-	.date-small {
-		display:block;
-	}
-	.date-big {
-		display:none;
-	}
 
 	.row.xtra-padding {
 		margin-left: 10vw;
@@ -756,57 +754,47 @@ header {
 }
 
 @media (min-width:940px) and (max-width:991px) {
-	.date-small {
-		display:none;
-	}
-	.date-big {
-		display:block;
-	}
 
 	.row.xtra-padding {
 		margin-left: 10vw;
 	}
 }
-	
-
 
 /*------------------------------
 	MEDIUM DEVICES
 ------------------------------*/
 
 @media (min-width:992px) and (max-width:1199px) {
-	.carousel .carousel-control {
-		top:140px;
-	}
 	
-	#blog .line i {
-		left:138px;
-	}
-	
-	#contact .macbook-inner {
-		top:56px;
-		left:137px;
-		width:697px;
-		height:435px;
-	}
-	#contact .form-control {
-		margin-bottom:21px;
-		height:32px;
-	}
-	
-	#contact textarea.form-control {
-		height:100px;
-	}
-	
-	.contact-image {
-		width:74px;
-	}
 	.row.xtra-padding {
 		margin-left: 10vw;
 	}
-	
 		
 }
+
+/*------------------------------
+	MEDIUM DEVICES
+------------------------------*/
+
+@media (min-width:0px) and (max-width:990px) {
+	
+	.row.xtra-padding {
+		margin-left: 10vw;
+	}
+		
+	.service.service-wrapper {
+		width: 90vw;
+	}
+
+	.new-p {
+		width: 90vw;
+	}
+}
+
+
+
+
+
 
 /*------------------------------
 	SMALL DEVICES
@@ -820,59 +808,10 @@ header {
 	#skills-toggle {
 		margin-top:25px;
 	}
-	
-	#services {
-		height:auto;
-	}
-	
-	#carousel-reference {
-		top:24px;
-		right:35px;
-		left:35px;
-	}
-	
-	.carousel .carousel-control {
-		top:100px;
-	}
-	
-	#blog .line i {
-		left:100px;
-	}
-	
-	#contact .macbook-inner {
-		top:43px;
-		left:108px;
-		width:535px;
-		height:334px;
-		padding:40px 20px;
-	}
-	
-	#contact .form-control {
-		margin-bottom:7px;
-		height:28px;
-	}
 
-	#contact textarea.form-control {
-		height:70px;
-	}
-	
 	#contact h3 {
 		margin:0 0 10px;
 		font-size:22px;
-	}
-		
-	.macbook-inner .btn {
-		padding:4px 8px;	
-	}
-	
-	#contact .help-block {
-		font-size: 12px;
-		top: -20px;
-	}
-	
-	.tweets p {
-		line-height:20px;
-		font-size: 14px;
 	}
 
 	.row.xtra-padding {
@@ -949,9 +888,9 @@ header {
 		padding:0 15px 0 15px;
 		font-size:38px;
 	}
-	
 	.jumbotron img {
-		max-height:150px;
+		min-width: 250px;
+		max-height:400px;
 	}
 	
 	#about {
@@ -963,20 +902,6 @@ header {
 		margin-top:25px;
 	}
 	
-	#blog .blog-main p {
-		padding-bottom:15px;
-		border-bottom:4px dashed #2C3E50;
-	}
-	
-	.blog-post {
-		margin:0 50px 25px;
-	}
-	
-	.blog-body p {
-		text-align:left;
-		font-size:14px;
-	}
-	
 	#skills {
 		padding:10px 0;
 	}
@@ -985,68 +910,12 @@ header {
 		margin-bottom:50px;
 	}
 	
-	.tweets {
-		min-height:90px;
-	}
-
-	.tweets p {
-		font-size:12px;
-	}
-	
-	.tweets i {
-		font-size:48px;
-		color:#34495E;
-	}
-	
-	#services {
-		height:auto;
-	}
-	
-	.showcase-text .media {
-		margin-bottom:20px;
-	}
-	
-	.blockquote-reverse p {
-		font-size:16px;
-	}
-	
-	blockquote footer {
-		font-size:14px;
-	}
-	
 	.grid li {
 		width: 370px;
 	}
 	
 	section > p {
 		padding:0 20px;
-	}
-	
-	.pricing-table {
-		margin:0 50px;
-	}
-	
-	#testimonials .media a.pull-left img {
-		max-width:50px;
-	}
-	
-	
-	
-	#contact {
-		padding:20px;
-	}
-	
-
-	
-	#contact .macbook-inner.black {
-		background-color:transparent;
-	}
-	
-	#contact .macbook-inner > .animated {
-		-webkit-animation-duration: 0;
-		  animation-duration: 0;
-		  -webkit-animation-fill-mode: both;
-		  animation-fill-mode: both;
 	}
 	
 	#contact .contact-alert .alert {
@@ -1061,21 +930,6 @@ header {
 		margin-top:10px;
 	}
 
-	.timeline {
-		margin:25px 0 0 350px;
-	}
-	
-	.event .event-info {
-		width:340px;
-	}
-	
-	.event .event-info .date {
-		margin-left:265px;
-	}
-	
-	#carousel-reference {
-		position:static;
-	}
 }
 
 /*------------------------------
