@@ -2,11 +2,6 @@
     Section - skills
 \*------------------------------------*/
 
-#skills {
-
-	
-}
-
 .skills-container-wrapper {
 	display: block;
 	margin-left: auto;
@@ -37,10 +32,8 @@ h6 {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	background-image: linear-gradient(to bottom, #f5ffeb, #FFF2CC);
-	border: 10px solid rgba(128, 128, 128, 0.151);
 	padding: 30px 0 30px 0;
-	margin: 100px 0 150px 0;
+	margin: 0 0 0px;
 	color: black;
 	max-width: 650px;
 }
@@ -53,9 +46,6 @@ h6 {
 	max-width: 80px;
 	min-height: 80px;
 	max-height: 80px;
-}
-
-.icon-box.cert {
 }
 
 .icon-box h4 {
@@ -72,20 +62,6 @@ h6 {
 	  font-weight: bold;
 	  padding: 0 0.5rem 0 0.5rem;
   }
-
-  .w3cert-img {
-	width: 90px;
-	height: auto;
-}
-
-  .w3cert-img:hover {
-	  filter: brightness(150%);
-  }
-
-.cert-link {
-	text-align: center;
-	font-size: 90%;
-}
 
 /*------------------------------
 	MAIN
@@ -127,14 +103,6 @@ h2 {
 	font-size:80px;
 	letter-spacing: -2px;
 	font-weight: bolder;
-}
-
-#hero-subtitle {
-	font-weight: 300;
-	color: #00CF00;
-	padding: 5px;
-	margin-bottom: 80px;
-	background-color: rgb(239, 255, 239);
 }
 
 h4 {
@@ -327,11 +295,18 @@ header {
 .jumbotron { /*hero*/
 	margin:0;
 	  background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1602299670/goodnight-html-01_zcr769.png");
-	background-size: cover;
-	background-position: center top;
-	background-repeat: no-repeat;
-	min-height: 100vh;
-	border-bottom: 10px solid #58565328
+	  background-size: cover;
+	  background-position: center top;
+	  background-attachment: fixed;
+}
+
+#jumbotron-text {
+	color: #e3ed5a;
+	font-size: 55px;
+}
+
+.subheading h3 {
+	color: white;
 }
 
 .jumbotron img {
@@ -430,6 +405,9 @@ header {
 	SERVICES 
 ------------------------------*/
 
+.inner-intro {
+}
+
 #service-outer-container {
 }
 
@@ -442,7 +420,6 @@ header {
 .service.service-wrapper {
 	border: 10px solid rgba(128, 128, 128, 0.151);
 	margin: 10px;
-	min-width: 200px;
 	background-image: linear-gradient(to bottom, #f5ffeb, #FFF2CC);
 }
 
@@ -454,7 +431,7 @@ header {
 	margin-right: auto;
 	list-style-type: none;
 	padding-bottom: 20px;
-	line-height: 1.5;
+	line-height: 20px;
 	font-size: 95%;
 	max-width: 250px;
 	padding-left: 15px;
@@ -496,6 +473,10 @@ header {
 	width: 150px;
 }
 
+.subheading h3 {
+	padding: 0 20px 0 20px;
+}
+
 h3 {
 	color: black;
 	font-family:'open sans', sans-serif;
@@ -522,7 +503,6 @@ h3 {
 	PORTFOLIO (me)
 ------------------------------*/
 #portfolio {
-
 }
 
 .grid {
@@ -667,15 +647,28 @@ h3 {
 /*------------------------------
 	CONTACT
 ------------------------------*/
+.contact-name {
+	padding-top: 10px;
+	font-size: 18pt;
+}
+
+.contact-method {
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+
+#contact {
+	padding-top: 200px;
+}
+
 .contact-wrapper {
 	background-image: linear-gradient(to bottom, #f5ffeb, #FFF2CC);
-	border: 10px solid rgba(128, 128, 128, 0.151);
 	background-size: cover;
 	background-attachment: fixed;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 650px;
+	margin-left: 20vw;
+	margin-right: 20vw;
 	padding: 30px 0 30px 0;
 }
 
@@ -686,14 +679,13 @@ h3 {
 }
 
 .contact-info {
-	max-width: 600px;
+	display: inline-block;
 	padding-bottom: 25px;
 }
 
 #contact-p {
 	width: auto;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 40px;
 
 }
 
@@ -702,12 +694,18 @@ h3 {
 ------------------------------*/
 
 #footer {
-	background: white;
 	background-size: auto;
 	text-align:center;
 	padding:40px 0;
 	color:black;
 
+}
+
+#footer img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 300px;
 }
 
 #footer .brands li a {
@@ -729,48 +727,26 @@ h3 {
  LARGE DEVICES
 ------------------------------*/
 @media (min-width:1380px) {
-	
-	.row.xtra-padding {
-		margin-left: 10vw;
-	}
-	
 }
+
 
 @media (min-width:1280px) and (max-width:1380px) {
 	
-	.row.xtra-padding {
-		margin-left: 10vw;
-	}
-	
-
 }
 
 @media (min-width:1200px) and (max-width:1279px) {
-	.row.xtra-padding {
-		margin-left: 10vw;
-	}
-
 }
 
 @media (min-width:1161px) and (max-width:1199px) {
-	.row.xtra-padding {
-		margin-left: 10vw;
-	}
 	
 }
 
 @media (min-width:992px) and (max-width:1160px) {
 
-	.row.xtra-padding {
-		margin-left: 10vw;
-	}
 }
 
 @media (min-width:940px) and (max-width:991px) {
 
-	.row.xtra-padding {
-		margin-left: 10vw;
-	}
 }
 
 /*------------------------------
@@ -778,10 +754,6 @@ h3 {
 ------------------------------*/
 
 @media (min-width:992px) and (max-width:1199px) {
-	
-	.row.xtra-padding {
-		margin-left: 10vw;
-	}
 		
 }
 
@@ -790,36 +762,39 @@ h3 {
 ------------------------------*/
 
 @media (min-width:0px) and (max-width:990px) {
-	
-	.row.xtra-padding {
-		margin-left: 10vw;
-	}
-		
+
 	.service.service-wrapper {
-		width: 90vw;
+		width: 100%;
+		border: none;
+		padding-left: 0;
+		padding-right: 0;
+		margin: 0 0 0 0;
+		background-image: none;
+	}
+
+	.service-p {
+		padding: 0 100px 0 100px;
 	}
 
 	.new-p {
-		width: 90vw;
+		margin: 0 10vw 0 10vw;
 	}
+
+	.contact-wrapper {
+		background-image: linear-gradient(to bottom, #f5ffeb, #FFF2CC);
+		border: none;
 }
-
-
-
-
-
 
 /*------------------------------
 	SMALL DEVICES
 ------------------------------*/
 
 @media (min-width:768px) and (max-width:991px) {
+	
+	
+	
 	header {
 		height:auto;
-	}
-	
-	#skills-toggle {
-		margin-top:25px;
 	}
 
 	#contact h3 {
@@ -827,8 +802,16 @@ h3 {
 		font-size:22px;
 	}
 
-	.row.xtra-padding {
-		margin-left: 8vw;
+	.icon-container {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		background-image: none;
+		padding: 30px 0 30px 0;
+		margin: 0;
+		color: black;
+		max-width: 650px;
+		border: none;
 	}
 }
 
@@ -837,6 +820,46 @@ h3 {
 ------------------------------*/
 
 @media (max-width:767px) {
+
+	.service-p {
+		padding: 0 2px 0 2px;
+	}
+	
+	.service.service-wrapper {
+		background-image: none;
+	}
+
+	.service.service-wrapper p {
+		margin: 0 10vw 10px 10vw;
+	}
+	
+	h2 {
+		font-size: 75px;
+	}
+
+	#contact {
+		background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1600894568/squig8_dinyl5.jpg");
+		background-size: cover;
+	}
+
+	#portfolio {
+		background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1600894568/squig8_dinyl5.jpg");
+		background-size: auto;
+	}
+
+	.icon-container {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		background-image: none;
+		padding: 30px 0 30px 0;
+		margin: 0;
+		color: black;
+		max-width: 650px;
+		border: none;
+	}
+
+
 	.navbar-collapse {
 		box-shadow:none;
 		border-top: 5px;
@@ -876,8 +899,8 @@ h3 {
 	}
 	
 	
-	h2, #jumbotron-text {
-		font-size:60px;	
+	h2 {
+		font-size:75px;	
 	}
 
 	.content-first {
@@ -902,7 +925,7 @@ h3 {
 		font-size:38px;
 	}
 	.jumbotron img {
-		min-width: 250px;
+		min-width: 300px;
 		max-height:400px;
 	}
 	
@@ -910,18 +933,11 @@ h3 {
 		padding-bottom:0;
 		padding-top:0;
 	}
-
-	#skills-toggle {
-		margin-top:25px;
-	}
 	
 	#skills {
-		padding:10px 0;
+		padding:0;
 	}
 	
-	#skills .chart {
-		margin-bottom:50px;
-	}
 	
 	.grid li {
 		width: 370px;
@@ -943,6 +959,10 @@ h3 {
 		margin-top:10px;
 	}
 
+	#footer {
+		background-color: whitesmoke;
+	}
+
 }
 
 /*------------------------------
@@ -950,18 +970,16 @@ h3 {
 ------------------------------*/
 
 @media (max-width:600px) {
-	
-	.timeline {
-		margin:25px 0 0 270px;
+	.contact-wrapper {
+		background-image: linear-gradient(to bottom, #f5ffeb, #FFF2CC);
+		background-size: cover;
+		background-attachment: fixed;
+		display: block;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 30px 0 30px 0;
 	}
-	
-	.event .event-info {
-		width:260px;
-	}
-	
-	.event .event-info .date {
-		margin-left:185px;
-	}
+
 }
 
 /*------------------------------
@@ -970,25 +988,8 @@ h3 {
 
 @media (max-width:548px) {
 	
-	
-	.timeline {
-		margin:25px 0 0 245px;
-	}
-	
-	.event .event-info {
-		width:235px;
-	}
-	
-	.event .event-info .date {
-		margin-left:160px;
-	}
-	
-	.grid li {
-		width: 370px;
-	}
-	
-	.pricing-table {
-		margin:0 30px;
+	#jumbotron-text {
+		font-size: 60px;
 	}
 }
 
@@ -998,83 +999,38 @@ h3 {
 
 @media (max-width:480px) {
 	
-	.row.xtra-padding {
-		margin-left: 0px;
-	}
 	
-	
-	.timeline {
-		margin:25px 0 0 210px;
-	}
-	
-	.event .event-info {
-		width:200px;
-	}
-	
-	.event .event-info .date {
-		margin-left:125px;
-	}
-	
-	.blog-post {
-		margin:0 10px 25px;
-	}
-	
-	#blog-header a{
-		font-size:15px;
-	}
-	
-	#blog-header i {
-		top:7px;
-		font-size:34px;
-	}
 
+	.subheading {
+		font-size:
+	}
 }
 
 /*------------------------------
 	PHONES 320px width
 ------------------------------*/
 
-@media (max-width:320px) {
+@media (max-width:375px) {
 	
-	.jumbotron .btn {
-		margin-bottom:15px;
-		margin-right:0px;
-	}
-	
-	.tweets p {
-		line-height:18px;
-	}
-	
-	.blog-post {
-		margin:0 0 25px;
-	}
-	
-	.timeline {
-		margin:25px 0 0 110px;
-	}
-	
-	.event .event-info {
-		width:100px;
-	}
-	
-	.event .event-info .date {
-		margin-left:25px;
+	.inner-intro h3 {
+		size: 
 	}
 	
 	.grid li {
 		width: 280px;
 	}
 	
-	.pricing-table {
-		margin:0;
+	h2 {
+		font-size:60px;	
+	}
+
+	#jumbotron-text {
+		font-size: 50px;
 	}
 	
-	#blog-header a{
-		font-size:12px;
+	.contact-method {
+		font-size: 12pt;
 	}
-	
-	#blog-header i {
-		font-size:28px;
-	}
+
 }
 
