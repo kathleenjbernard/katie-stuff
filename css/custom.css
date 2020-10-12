@@ -98,7 +98,7 @@ h2 {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	font-family: 'Knewave', cursive;
-	color: black;
+	color: #FFF2CC;
 	text-transform: uppercase;
 	font-size:80px;
 	letter-spacing: -2px;
@@ -298,8 +298,6 @@ header {
 	  background-size: cover;
 	  background-position: center top;
 	  background-attachment: fixed;
-	min-height: 100vh;
-	border-bottom: 10px solid #58565328
 }
 
 #jumbotron-text {
@@ -312,19 +310,29 @@ header {
 }
 
 .jumbotron img {
+	visibility: hidden;
 	margin:0 auto 0 auto;
 	max-width: 40vw;
-	margin-bottom:15px;
+	margin-bottom: 15px;
+}
+
+.social-wrapper { /*change margin for placement of name and title*/
+	margin-top: -500px;
 }
 
 .social-wrapper h2 {
 	display:inline;
 	padding:0 15px 0 15px;
 	font-size:78px;
+	color: rgb(255, 213, 198);
 }
 
-.brands {
-	display:inline;
+.social-wrapper h3 { /*subheading on jumbotron*/
+	color: white;
+}
+
+.brands { /*hides social media icons on jumbotron*/
+	visibility: hidden;
 }
 
 .brands > li > a {
