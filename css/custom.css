@@ -298,6 +298,7 @@ header {
 	  background-size: cover;
 	  background-position: center top;
 	  background-attachment: fixed;
+	  min-height: 100vh;
 }
 
 #jumbotron-text {
