@@ -1007,22 +1007,25 @@ h3 {
 
 	.jumbotron {
 		margin:0;
-	  background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1602625782/Asset_202_p8od1h.png");
+	  background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1602630198/Asset_203_s2svue.png");
 	  background-size: auto;
 	  background-attachment: fixed;
 	  min-height: 100vh;
 	}
 
 	.social-wrapper {
-		background-color: #e3ed5aa1;
+		padding: 0 10px 0 10px;
 	}
 
 	.social-wrapper h3 {
-		color: black;
+		color: white;
 		margin-top: 10px;
+		border-top: 1px solid white;
 		font-size: 14pt;
+		padding-top: 10px;
 		padding-bottom: 5px;
-
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	
 	footer img {
@@ -1043,7 +1046,7 @@ h3 {
 
 	#jumbotron-text {
 		font-size: 65px;
-		color: black;
+		color: #FCE5CD;
 		margin-top: 0;
 		padding-top: 0;
 		line-height: 1.5;
