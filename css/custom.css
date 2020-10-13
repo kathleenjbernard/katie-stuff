@@ -307,10 +307,6 @@ header {
 	z-index: 1000;
 }
 
-.subheading h3 {
-	color: white;
-}
-
 .jumbotron img {
 	visibility: hidden;
 	margin:0 auto 0 auto;
@@ -1004,10 +1000,51 @@ h3 {
 }
 
 /*------------------------------
+	PHONES 375px width /*iphone 6/7/8 375 x 667
+------------------------------*/
+
+@media (width:375px) {
+
+	.jumbotron {
+		margin:0;
+	  background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1602610812/iphone-background_lxnfxz.png");
+	  background-size: auto;
+	  background-attachment: fixed;
+	  min-height: 100vh;
+	}
+
+	.social-wrapper h3 {
+		color: pink;
+		margin-top: 10px;
+	}
+	
+	.inner-intro h3 {
+		size: 
+	}
+	
+	.grid li {
+		width: 280px;
+	}
+	
+	h2 {
+		font-size:60px;	
+	}
+
+	#jumbotron-text {
+		font-size: 50px;
+	}
+	
+	.contact-method {
+		font-size: 12pt;
+	}
+
+}
+
+/*------------------------------
 	PHONES 320px width
 ------------------------------*/
 
-@media (max-width:375px) {
+@media (max-width:320px) {
 	
 	.inner-intro h3 {
 		size: 
