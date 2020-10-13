@@ -1007,17 +1007,28 @@ h3 {
 
 	.jumbotron {
 		margin:0;
-	  background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1602610812/iphone-background_lxnfxz.png");
+	  background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1602625782/Asset_202_p8od1h.png");
 	  background-size: auto;
 	  background-attachment: fixed;
 	  min-height: 100vh;
 	}
 
+	.social-wrapper {
+		background-color: #e3ed5aa1;
+	}
+
 	.social-wrapper h3 {
-		color: pink;
+		color: black;
 		margin-top: 10px;
+		font-size: 14pt;
+		padding-bottom: 5px;
+
 	}
 	
+	footer img {
+		visibility: hidden;
+	}
+
 	.inner-intro h3 {
 		size: 
 	}
@@ -1031,7 +1042,11 @@ h3 {
 	}
 
 	#jumbotron-text {
-		font-size: 50px;
+		font-size: 65px;
+		color: black;
+		margin-top: 0;
+		padding-top: 0;
+		line-height: 1.5;
 	}
 	
 	.contact-method {
