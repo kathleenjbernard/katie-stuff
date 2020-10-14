@@ -68,12 +68,12 @@ h6 {
 ------------------------------*/
 html,
 body {
-	height:100%;
+	width: 100%;
+	overflow-x: hidden; /**important**/
 }
 
 body {
 	font-family: 'open sans', sans-serif;
-	overflow-x:hidden;
 }
 
 h1 {
@@ -230,6 +230,7 @@ ul { /**remove auto indent**/
 	padding-top:3px;
 	border-bottom:8px solid rgba(0,0,0,0.1);
 	display:none;
+	width: auto;
 }
 
 .navbar-default .navbar-brand {
@@ -289,7 +290,6 @@ ul { /**remove auto indent**/
 
 header {
 	text-align:center;
-	background-color:white;
 }
 
 .jumbotron { /*hero*/
@@ -419,18 +419,23 @@ header {
 	background-image: linear-gradient(to bottom, #f5ffeb, #FFF2CC);
 }
 
-
+.service-icon {
+	padding: 7px;
+	margin: 10px;
+	color: black;
+	font-size: 25px;
+}
 
 .service-list {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	list-style-type: none;
+	list-style-type: square;
 	padding-bottom: 20px;
-	line-height: 20px;
-	font-size: 95%;
-	max-width: 250px;
 	padding-left: 15px;
+	line-height: 20px;
+	font-size: 100%;
+	max-width: 300px;
 }
 
 .service-list-item i {
@@ -643,53 +648,70 @@ h3 {
 /*------------------------------
 	CONTACT
 ------------------------------*/
-.contact-name {
-	padding-top: 10px;
-	font-size: 18pt;
-}
 
-.contact-method {
-	font-size: 16pt;
-	font-weight: bold;
+#head-img {
+	margin-top: -100px;
 }
-
 
 #contact {
-	padding-top: 200px;
+	position: relative;
+	background-image: linear-gradient(red, blue);
 }
 
-.contact-wrapper {
-	background-image: linear-gradient(to bottom, #f5ffeb, #FFF2CC);
-	background-size: cover;
-	background-attachment: fixed;
+.contact-details {
 	display: block;
-	margin-left: 20vw;
-	margin-right: 20vw;
-	padding: 30px 0 30px 0;
-}
-
-#contact h2 {
-	padding-top: 0;
-	margin-top: 0;
-	padding-bottom: 5px;
-}
-
-.contact-info {
-	display: inline-block;
-	padding-bottom: 25px;
-}
-
-#contact-p {
+	margin-left: auto;
+	margin-right: auto;
 	width: auto;
-	padding: 40px;
-
+    top: 0;
+    background: #fff;
+    border: #C7C7C7 2px solid;
+    padding: 25px;
+    margin-top: 80px;
 }
+
+.contact-details h2 {
+    margin: 0;
+}
+
+.contact-details p {
+    line-height: 24px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.contact-phone, .contact-email{
+    margin-bottom: 10px;
+}
+
+.contact-details .icon{
+    margin-right: 5px;
+    margin-top: 3px;
+
+    font-size: 14px;
+    display: inline-block;
+    color: #777;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /*------------------------------
 	FOOTER
 ------------------------------*/
 
 #footer {
+	position: relative;
+	background-color: pink;
 	background-size: auto;
 	text-align:center;
 	padding:40px 0;
@@ -697,12 +719,6 @@ h3 {
 
 }
 
-#footer img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 300px;
-}
 
 #footer .brands li a {
 	color: black;
@@ -766,6 +782,14 @@ h3 {
 		padding-right: 0;
 		margin: 0 0 0 0;
 		background-image: none;
+	}
+
+	.service-icon {
+		padding: 7px;
+		margin: 10px;
+		color: white;
+		background-color: black;
+		font-size: 25px;
 	}
 
 	.service-p {
@@ -966,16 +990,6 @@ h3 {
 ------------------------------*/
 
 @media (max-width:600px) {
-	.contact-wrapper {
-		background-image: linear-gradient(to bottom, #f5ffeb, #FFF2CC);
-		background-size: cover;
-		background-attachment: fixed;
-		display: block;
-		margin-left: 0;
-		margin-right: 0;
-		padding: 30px 0 30px 0;
-	}
-
 }
 
 /*------------------------------
@@ -994,12 +1008,7 @@ h3 {
 ------------------------------*/
 
 @media (max-width:480px) {
-	
-	
 
-	.subheading {
-		font-size:
-	}
 }
 
 /*------------------------------
@@ -1010,7 +1019,7 @@ h3 {
 
 	.jumbotron {
 		margin:0;
-	  background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1602630198/Asset_203_s2svue.png");
+	  background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1602698640/revised_ij4dni.png");
 	  background-size: auto;
 	  background-attachment: fixed;
 	  min-height: 100vh;
