@@ -294,8 +294,8 @@ header {
 
 .jumbotron { /*hero*/
 	margin:0;
-	  background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1602299670/goodnight-html-01_zcr769.png");
-	  background-color: black;
+	  background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1602733200/Artboard_1_3x_efkfsl.png");
+	  background-color: white;
 	  background-size: cover;
 	  background-position: center top;
 	  background-attachment: fixed;
@@ -655,7 +655,8 @@ h3 {
 
 #contact {
 	position: relative;
-	background-image: linear-gradient(red, blue);
+	background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1602733884/marker1_bkz5fs.jpg");
+	background-size: cover;
 }
 
 .contact-details {
@@ -663,11 +664,11 @@ h3 {
 	margin-left: auto;
 	margin-right: auto;
 	width: auto;
-    top: 0;
-    background: #fff;
-    border: #C7C7C7 2px solid;
-    padding: 25px;
-    margin-top: 80px;
+	top: 0;
+	background-color: white;
+    padding: 20px;
+	margin-top: 60px;
+	margin-bottom: 20px;
 }
 
 .contact-details h2 {
@@ -711,17 +712,17 @@ h3 {
 
 #footer {
 	position: relative;
-	background-color: pink;
+	background-color: rgb(37, 37, 37);
 	background-size: auto;
 	text-align:center;
 	padding:40px 0;
-	color:black;
+	color:white;
 
 }
 
 
 #footer .brands li a {
-	color: black;
+	color: white;
 	
 	border-radius:50px;
 	border:0;
@@ -857,11 +858,6 @@ h3 {
 		font-size: 75px;
 	}
 
-	#contact {
-		background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1600894568/squig8_dinyl5.jpg");
-		background-size: cover;
-	}
-
 	#portfolio {
 		background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1600894568/squig8_dinyl5.jpg");
 		background-size: auto;
@@ -977,10 +973,6 @@ h3 {
 	
 	.btn-footer {
 		margin-top:10px;
-	}
-
-	#footer {
-		background-color: whitesmoke;
 	}
 
 }
