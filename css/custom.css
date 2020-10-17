@@ -319,7 +319,7 @@ header {
 
 .jumbotron { /*hero*/
 	margin:0;
-	  background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1602817604/Artboard_1_2x_petcxl.png");
+	  background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1602733884/marker1_bkz5fs.jpg");
 	  background-color: white;
 	  background-size: cover;
 	  background-position: center top;
@@ -328,17 +328,18 @@ header {
 }
 
 #jumbotron-text {
-
+	color: black;
 	font-size: 70px;
 	z-index: 1000;
 	font-family: 'source code pro', monospace;
 	font-weight: 100;
+	padding: 5px 0 5px 0;
 }
 
 .jumbotron img {
-	visibility: hidden;
-	margin:0 auto 0 auto;
-	max-width: 40vw;
+	border: 8px solid black;
+	margin:20vh auto 0 auto;
+	max-width: 60vw;
 	margin-bottom: 15px;
 }
 
@@ -347,10 +348,9 @@ header {
 	flex-direction: column;
 	padding: 0 10px 0 10px;
 	justify-content: center;/*change margin for placement of name and title*/
-	background-color: #FCE5CD;
 	background-size: cover;
-	margin-left: 30vw;
-	margin-right: 30vw;
+	margin-left: 20vw;
+	margin-right: 20vw;
 }
 
 .social-wrapper h3 { /*subheading on jumbotron*/
@@ -360,7 +360,7 @@ header {
 	color: black;
 	margin-top: 5px;
 	padding: 5px 0 20px 0;
-	font-size: 100%;
+	font-size: 102%;
 }
 
 .social-wrapper h3::before {
@@ -370,7 +370,7 @@ header {
   	bottom  : 0;
   	height  : 1px;
   	width   : 10%;
-	  border-bottom:1px solid black;
+	  border-bottom:1px solid #F22E2E;
 }
 
 .brands { /*hides social media icons on jumbotron*/
@@ -804,38 +804,44 @@ h3 {
 	.jumbotron-text {
 		font-size: 120px;
 	}
+	.jumbotron img {
+		margin:15vh auto 0 auto;
+		max-width: 60vw;
+		margin-bottom: 15px;
+	}
+	
 }
 
 @media (min-width:1161px) {
 
 	#jumbotron-text {
-		font-size: 100px;
+		padding: 5px 0 5px 0;
+		line-height: 0.9;
+		font-weight: 100;
 	}
 
 	.social-wrapper { 
 		display: flex;
 		flex-direction: column;
-		padding: 0 10px 0 10px;
+		padding: 0 5px 0 5px;
 		justify-content: center;/*change margin for placement of name and title*/
-		background-image: linear-gradient(to bottom, #f5ffeb, #FFF2CC);
 		background-size: cover;
-		margin-left: 30vw;
-		margin-right: 30vw;
+
+	}
+	.social-wrapper h3 {
+		font-size: 110%;
 	}
 }
 
 @media (min-width:1280px) and (max-width:1399px) {
-	.social-wrapper {
-		margin-left: 33vw;
-		margin-right: 33vw;
-	}
+	.jumbotron img {
+		margin:15vh auto 0 auto;
+	
+}
 }
 
 @media (min-width:992px) and (max-width:1160px) {
-	.social-wrapper {
-		margin-left: 36vw;
-		margin-right: 36vw;
-	}
+	
 
 }
 
@@ -1141,20 +1147,17 @@ h3 {
   	min-height: 100vh;
 }
 
+.jumbotron img {
+	visibility: hidden;
+}
+
 .social-wrapper {
 	position: absolute;
 	top: 0;
 	padding-top: 10vh;
+	padding-bottom: 5vh;
+	background-color: #FFF2CC;
 }
-
-#jumbotron-text {
-	color: orangered;
-}
-
-	.bold-heading {
-		background-color: #e3ed5a;
-	}
-
 
 }
 
@@ -1164,12 +1167,24 @@ h3 {
 
 @media (width:375px) {
 
+	.social-wrapper {
+		position: absolute;
+		top: 0;
+		padding-top: 10vh;
+		padding-bottom: 5vh;
+		background-color: #FFF2CC;
+	}
+
 	.jumbotron {
 		margin:0;
 	  background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1602783391/iphone-background-marker-01_c2hr1y.png");
 	  background-size: auto;
 	  background-attachment: fixed;
 	  min-height: 100vh;
+	}
+
+	.jumbotron img {
+		visibility: hidden;
 	}
 
 	.social-wrapper h3 {
@@ -1206,6 +1221,13 @@ h3 {
 	.contact-method {
 		font-size: 12pt;
 	}
+
+	#contact {
+	background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1602610812/iphone-background_lxnfxz.png");
+	background-position: bottom center;
+	background-attachment: fixed;
+	background-size: cover;
+	}
 }
 
 /*------------------------------
@@ -1227,5 +1249,21 @@ h3 {
 	
 	.contact-method {
 		font-size: 12pt;
+	}
+	.jumbotron img {
+		visibility: hidden;
+		border: 1px solid black;
+	}
+
+	.social-wrapper {
+		position: absolute;
+		top: 190px;
+	}
+	.jumbotron {
+		background-image;
+		background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1602974521/Artboard_2_m8bsr4.png"), 
+		url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1600894568/squig8_dinyl5.jpg");
+		background-size: cover;
+		background-position: top;
 	}
 }
