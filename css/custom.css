@@ -15,7 +15,6 @@
 	padding: 10px;
 }
 
-
 .skills-container-wrapper {
 	display: block;
 	margin-left: auto;
@@ -106,7 +105,7 @@ a:hover {
 p {
 	margin: 0 0 20px;
 	font-size:16px;
-	line-height:28px;
+	line-height:24px;
 }
 
 h2 {
@@ -269,7 +268,6 @@ ul { /**remove auto indent**/
 
 .navbar-default .navbar-nav > li > a, 
 	footer a {
-	color:black;
 	font-family:'open sans', sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -279,12 +277,22 @@ ul { /**remove auto indent**/
 	transition-duration:0.7s;
 }
 
+.navbar-default .navbar-nav > li > a {
+	color: black;
+}
+
+footer a {
+	color: white;
+}
+
+
 .navbar-default .navbar-nav > li > a.blog_menu_link:hover{
 	background-color: #ddeb1e;
 }
 
-.navbar-default .navbar-nav > li > a:hover {
-	background-color: #ddeb1e;
+.navbar-default .navbar-nav > li > a:hover,
+	footer a:hover {
+	color: #ddeb1e;
 	font-weight: bold;
 }
 
@@ -311,7 +319,7 @@ header {
 
 .jumbotron { /*hero*/
 	margin:0;
-	  background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1602733200/Artboard_1_3x_efkfsl.png");
+	  background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1602817604/Artboard_1_2x_petcxl.png");
 	  background-color: white;
 	  background-size: cover;
 	  background-position: center top;
@@ -320,9 +328,11 @@ header {
 }
 
 #jumbotron-text {
-	color: black;
+
 	font-size: 70px;
 	z-index: 1000;
+	font-family: 'source code pro', monospace;
+	font-weight: 100;
 }
 
 .jumbotron img {
@@ -337,16 +347,30 @@ header {
 	flex-direction: column;
 	padding: 0 10px 0 10px;
 	justify-content: center;/*change margin for placement of name and title*/
-	background-image: linear-gradient(to bottom, #f5ffeb, #FFF2CC);
+	background-color: #FCE5CD;
 	background-size: cover;
 	margin-left: 30vw;
 	margin-right: 30vw;
 }
 
 .social-wrapper h3 { /*subheading on jumbotron*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	color: black;
-	background-color:  #FFF2CC;
-	margin-top: 0;
+	margin-top: 5px;
+	padding: 5px 0 20px 0;
+	font-size: 100%;
+}
+
+.social-wrapper h3::before {
+	content : "";
+	  position: absolute;
+	  left: 45%;
+  	bottom  : 0;
+  	height  : 1px;
+  	width   : 10%;
+	  border-bottom:1px solid black;
 }
 
 .brands { /*hides social media icons on jumbotron*/
@@ -387,8 +411,6 @@ header {
 	transition-duration:0.4s;
 }
 
-
-
 /* IMAGE OVERLAY */
 
 .overlay-wrapper {
@@ -427,9 +449,6 @@ header {
 	border-top: 20px solid whitesmoke;
 }
 
-#service-outer-container {
-}
-
 .justify-center {
 	display: flex;
 	justify-content: center;
@@ -439,24 +458,30 @@ header {
 .service.service-wrapper {
 	/*border: 10px solid rgba(128, 128, 128, 0.151); */
 	margin: 10px;
-	background-image: linear-gradient(to bottom, #f5ffeb, #FFF2CC);
+	background-color: whitesmoke;
+}
+
+.service-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: top;
 }
 
 .service-icon {
 	padding: 7px;
 	margin: 10px;
-	color: black;
+	color:#00CF00;
 	font-size: 25px;
 }
 
 .service-list {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	list-style-type: square;
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
 	padding-bottom: 20px;
 	padding-left: 15px;
-	line-height: 20px;
+	line-height: 24px;
 	font-size: 100%;
 	max-width: 300px;
 }
@@ -471,8 +496,20 @@ header {
 
 .service-wrapper>h3 {
 	color: black;
-	margin-top: 0;
+	margin-top: 15px;
+	height: 75px;
 	padding-top: 0;
+	
+}
+
+.social-wrapper h3::before {
+	content : "";
+	  position: absolute;
+	  left: 45%;
+  	bottom  : 0;
+  	height  : 1px;
+  	width   : 10%;
+	  border-bottom:1px solid black;
 }
 
 .new-p-wrapper {
@@ -497,10 +534,6 @@ header {
 	width: 150px;
 }
 
-.subheading h3 {
-	padding: 0 20px 0 20px;
-}
-
 h3 {
 	color: black;
 	font-family:'open sans', sans-serif;
@@ -509,6 +542,7 @@ h3 {
 	font-size: 2rem;
 	letter-spacing: 2px;
 }
+
 
 .extra-padding.header {
 	margin-top: 100px;
@@ -523,12 +557,18 @@ h3 {
 	min-height: 45vh;
 }
 
+.inner-intro {
+
+}
+
 /*------------------------------
 	PORTFOLIO (me)
 ------------------------------*/
 #portfolio {
 	background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1600894568/squig8_dinyl5.jpg");
-	background-size: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 }
 
 .grid {
@@ -722,7 +762,6 @@ h3 {
 .contact-details .icon{
     margin-right: 5px;
     margin-top: 3px;
-
     font-size: 14px;
     display: inline-block;
     color: #777;
@@ -741,13 +780,10 @@ h3 {
 	text-align:center;
 	padding:40px 0;
 	color:white;
-
 }
-
 
 #footer .brands li a {
 	color: white;
-	
 	border-radius:50px;
 	border:0;
 }
@@ -763,7 +799,15 @@ h3 {
 /*------------------------------
  LARGE DEVICES
 ------------------------------*/
+
+@media (min-width:1399px) {
+	.jumbotron-text {
+		font-size: 120px;
+	}
+}
+
 @media (min-width:1161px) {
+
 	#jumbotron-text {
 		font-size: 100px;
 	}
@@ -777,8 +821,8 @@ h3 {
 		background-size: cover;
 		margin-left: 30vw;
 		margin-right: 30vw;
+	}
 }
-
 
 @media (min-width:1280px) and (max-width:1399px) {
 	.social-wrapper {
@@ -787,26 +831,11 @@ h3 {
 	}
 }
 
-@media (min-width:1399px) {
-	.jumbotron-text {
-		font-size: 120px;
-	}
-}
-
-@media (min-width:1161px) and (max-width:1199px) {
-	
-	
-}
-
 @media (min-width:992px) and (max-width:1160px) {
 	.social-wrapper {
 		margin-left: 36vw;
 		margin-right: 36vw;
 	}
-
-}
-
-@media (min-width:940px) and (max-width:991px) {
 
 }
 
@@ -829,11 +858,6 @@ h3 {
 @media (min-width:0px) and (max-width:990px) {
 
 	.service.service-wrapper {
-		width: 100%;
-		border: none;
-		padding-left: 0;
-		padding-right: 0;
-		margin: 0 0 0 0;
 		background-image: none;
 	}
 
@@ -860,9 +884,7 @@ h3 {
 ------------------------------*/
 
 @media (min-width:768px) and (max-width:991px) {
-	
-	
-	
+
 	header {
 		height:auto;
 	}
@@ -894,6 +916,11 @@ h3 {
 		margin-right: -80px;
 	}
 
+	.service-wrapper {
+		justify-content: center;
+		align-items: center;
+	}
+
 }
 
 /*------------------------------
@@ -902,6 +929,27 @@ h3 {
 
 @media (max-width:767px) {
 
+	.service-icon {
+		margin: 10px 0 10px 0;
+	}
+
+	.service-wrapper {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.service-wrapper>h3 {
+		color: black;
+		margin-top: 15px;
+		height: 50px;
+		padding-top: 0;
+	}
+
+	.social-wrapper {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	.contact-details {
 		width: auto;
 		margin-right: auto;
@@ -909,6 +957,7 @@ h3 {
 
 	.service-p {
 		padding: 0 2px 0 2px;
+		color: rgb(63, 63, 63);
 	}
 	
 	.service.service-wrapper {
@@ -916,7 +965,16 @@ h3 {
 	}
 
 	.service.service-wrapper p {
-		margin: 0 10vw 10px 10vw;
+		margin: 0 10px 10px 10px;
+	}
+
+	.service-list-item i {
+		padding-right: 5px;
+	}
+	
+	.service-list-item {
+		text-align: left;
+		margin: 10px 0 10px 0;
 	}
 	
 	h2 {
@@ -926,6 +984,20 @@ h3 {
 	#portfolio {
 		background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1600894568/squig8_dinyl5.jpg");
 		background-size: auto;
+		background-repeat: repeat;
+	}
+
+	.grid li {
+		display: inline-block;
+		width: 100vw;
+		margin: 0;
+		padding: 0;
+		text-align: left;
+		position: relative;
+	}
+
+	.grid {
+		padding: 0;
 	}
 
 	.icon-container {
@@ -939,7 +1011,6 @@ h3 {
 		max-width: 650px;
 		border: none;
 	}
-
 
 	.navbar-collapse {
 		box-shadow:none;
@@ -978,7 +1049,6 @@ h3 {
 		top:-9px;
 		position:relative;
 	}
-	
 	
 	h2 {
 		font-size:75px;	
@@ -1019,14 +1089,11 @@ h3 {
 		padding:0;
 	}
 	
-	
 	.grid li {
 		width: 370px;
 	}
 	
-	section > p {
-		padding:0 20px;
-	}
+	
 	
 	#contact .contact-alert .alert {
 		margin-bottom:20px;
@@ -1061,26 +1128,35 @@ h3 {
 }
 
 /*------------------------------
-	PHONES 480px width
-------------------------------*/
-
-@media (max-width:480px) {
-
-}
-
-/*------------------------------
 	iPHONE X - 375 x 812
 ------------------------------*/
-@media only screen and (width:375px) and (height:812px) {
+@media (width:375px) and (height:812px) {
 
 .jumbotron {
 	margin:0;
-  background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1602783391/iphone-background-marker-01_c2hr1y.png");
-  background-size: cover;
-  background-attachment: fixed;
-  min-height: 100vh;
+  	background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1602783391/iphone-background-marker-01_c2hr1y.png");
+  	background-size: cover;
+ 	 background-attachment: scroll;
+ 	 background-position: bottom;
+  	min-height: 100vh;
 }
 
+.social-wrapper {
+	position: absolute;
+	top: 0;
+	padding-top: 10vh;
+}
+
+#jumbotron-text {
+	color: orangered;
+}
+
+	.bold-heading {
+		background-color: #e3ed5a;
+	}
+
+
+}
 
 /*------------------------------
 	PHONES 375px width /*iphone 6/7/8 375 x 667
@@ -1110,10 +1186,6 @@ h3 {
 		visibility: hidden;
 	}
 
-	.inner-intro h3 {
-		size: 
-	}
-	
 	.grid li {
 		width: 280px;
 	}
@@ -1141,17 +1213,12 @@ h3 {
 ------------------------------*/
 
 @media (max-width:320px) {
-	
-	.inner-intro h3 {
-		size: 
-	}
-	
 	.grid li {
 		width: 280px;
 	}
 	
 	h2 {
-		font-size:60px;	
+		font-size:55px;	
 	}
 
 	#jumbotron-text {
@@ -1161,6 +1228,4 @@ h3 {
 	.contact-method {
 		font-size: 12pt;
 	}
-
 }
-
